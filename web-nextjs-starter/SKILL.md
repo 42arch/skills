@@ -27,9 +27,10 @@ This skill scaffolds a modern, high-performance web application based on a custo
       ```
 
 2.  **Apply Template**:
-    Use `degit` to pull the starter template into the current directory (no git history), then update `package.json` `"name"` field to the new project name:
+    Use `degit` to pull the starter template into the current directory (no git history). Then, **remove the `renovate.json` file and the `.github` folder** to ensure a clean start, and update the `package.json` `"name"` field to the new project name:
     ```bash
     pnpm dlx degit vault42/nextjs-starter .
+    rm -rf renovate.json .github
     ```
 
 3.  **Install Dependencies**:
