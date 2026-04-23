@@ -19,18 +19,18 @@ This skill scaffolds a modern, high-performance web application based on a custo
 ## Workflow
 
 1.  **Initialize Project Directory**:
-    Create a new directory for the project using the name provided by the user.
+    Check if the current working directory is empty:
+    - **Empty**: Use it directly as the project root.
+    - **Not empty**: Inform the user and ask them to provide a project name. Create a new subdirectory and enter it:
+      ```bash
+      mkdir <project-name> && cd <project-name>
+      ```
 
 2.  **Apply Template**:
-    Copy ALL contents from the skill's `template/` directory to the new project directory. This includes:
-    - `package.json` (Update the `"name"` field to the new project name)
-    - `components.json`
-    - `eslint.config.mjs`
-    - `next.config.ts`
-    - `tsconfig.json`
-    - `pnpm-lock.yaml` & `pnpm-workspace.yaml`
-    - `src/` (Including `ThemeProvider` and `ModeToggle`)
-    - `public/` (Static assets)
+    Use `degit` to pull the starter template into the current directory (no git history), then update `package.json` `"name"` field to the new project name:
+    ```bash
+    pnpm dlx degit vault42/nextjs-starter .
+    ```
 
 3.  **Install Dependencies**:
     Run `pnpm install` in the project directory to install dependencies and ensure the lockfile is respected.
@@ -39,5 +39,4 @@ This skill scaffolds a modern, high-performance web application based on a custo
     Run `pnpm lint` to ensure the project is correctly configured and passes all linting rules.
 
 5.  **Final Steps**:
-    - Remove any stray `.git` directories from the template copy.
-    - Provide the user with a summary of the tech stack and the command to start development (`pnpm dev`).
+    Provide the user with a summary of the tech stack and the command to start development (`pnpm dev`).

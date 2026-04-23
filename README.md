@@ -19,7 +19,7 @@ Scaffolds a modern, production-grade Next.js web application from a pre-built te
 **Tech stack:** Next.js 16 · Tailwind CSS v4 · shadcn-ui · next-themes · Phosphor Icons · pnpm
 
 ```bash
-npx skills add 42arch/skills@web-nextjs-starter
+npx skills add 42arch/skills/web-nextjs-starter
 ```
 
 ---
