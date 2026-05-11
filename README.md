@@ -16,10 +16,22 @@ Scaffolds a modern, production-grade Next.js web application from a pre-built te
 
 **Triggers when:** User wants to start a new web project or Next.js app.
 
-**Tech stack:** Next.js 16 · Tailwind CSS v4 · shadcn-ui · next-themes · Phosphor Icons · pnpm
+**Tech stack:** Next.js 16 · Tailwind CSS v4 · shadcn-ui · next-themes · pnpm
 
 ```bash
 npx skills add 42arch/skills/web-nextjs-starter
+```
+
+### `tauri-starter`
+
+Scaffolds a production-ready Tauri 2.0 desktop application with a Next.js 16 frontend.
+
+**Triggers when:** User wants to start a "tauri app", "desktop app", or asks for a Tauri + Next.js + Tailwind CSS project.
+
+**Tech stack:** Tauri 2.0 (Rust) · Next.js 16 · Tailwind CSS v4 · shadcn-ui · pnpm
+
+```bash
+npx skills add 42arch/skills/tauri-starter
 ```
 
 ---
